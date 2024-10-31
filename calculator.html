@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Calculator</title>
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div style="min-height: 100vh; background-color: black;" class="d-flex align-items-center justify-content-center">
+        <div style="min-height: 70vh; width:50vh ; background-color: antiquewhite; display: flex; flex-direction: column; justify-content: space-around;">
+
+            <input id="input" type="text" placeholder="0" style="background-color: black; height: 40px; color: #fff;" class="ms-2 me-2 rounded-4">
+              
+             <div>
+                <div class="row  ms-2">
+                    <div class="col-3"><button class="w-100 rounded-5 border-0 btn btn-secondary" style="height: 40px;">%</button></div>
+                    <div class="col-3"><button class="w-100 rounded-5 border-0 btn btn-secondary text-danger" style="height: 40px;" onclick="singleRemove()">X</button></div>
+                    <div class="col-3"><button class="w-100 rounded-5 border-0 btn btn-secondary" style="height: 40px;" onclick="clearData()">C</button></div>
+                    <div class="col-3"><button class="w-75 rounded-5 border-0 btn btn-warning" style="height: 40px;">/</button></div>
+                </div>
+                 <div class="row ms-2 mt-3">
+                     <div class="col-3"><button id="" class="w-100 rounded-5 border-0 " style="height: 40px;" onclick="displayContent('7')">7</button></div>
+                     <div class="col-3 "><button class="w-100 rounded-5 border-0" style="height: 40px;" onclick="displayContent('8')">8</button></div>
+                     <div class="col-3"><button class="w-100 rounded-5 border-0" style="height: 40px;" onclick="displayContent('9')">9</button></div>
+                    <div class="col-3"><button class="w-75 rounded-5 border-0 btn btn-warning" style="height: 40px;" onclick="displayContent('*')">*</button></div>
+                 </div>
+                <div class="row mt-3 ms-2">
+                    <div class="col-3"><button class="w-100 rounded-5 border-0" style="height: 40px;" onclick="displayContent('4')">4</button></div>
+                    <div class="col-3"><button class="w-100 rounded-5 border-0" style="height: 40px;" onclick="displayContent('5')">5</button></div>
+                    <div class="col-3"><button class="w-100 rounded-5 border-0" style="height: 40px;" onclick="displayContent('6')">6</button></div>
+                    <div class="col-3"><button class="w-75 rounded-5 border-0 btn btn-warning" style="height: 40px;" onclick="displayContent('-')">-</button></div>
+                </div>
+                <div class="row mt-3 ms-2">
+                    <div class="col-3"><button class="w-100 rounded-5 border-0" style="height: 40px;" onclick="displayContent('1')">1</button></div>
+                    <div class="col-3"><button class="w-100 rounded-5 border-0" style="height: 40px;" onclick="displayContent('2')">2</button></div>
+                    <div class="col-3"><button class="w-100 rounded-5 border-0" style="height: 40px;" onclick="displayContent('3')">3</button></div>
+                    <div class="col-3"><button class="w-75 rounded-5 border-0 btn btn-warning" style="height: 40px;" onclick="displayContent('+')">+</button></div>
+                </div>
+                <div class="row mt-3 ms-2">
+                    <div class="col-3"><button class="w-100 rounded-5 border-0" style="height: 40px;" onclick="displayContent('0')">0</button></div>
+                    <div class="col-3"><button class="w-100 rounded-5 border-0" style="height: 40px;" onclick="displayContent('.')">.</button></div>
+                    <div class="col-3"><button class=" rounded-5 border-0 btn btn-danger" style="height: 40px; width: 120px;" onclick="showResult()">=</button></div>
+                   
+                </div>
+                 
+             </div>
+        </div>
+
+    </div>
+</body>
+</html>
